@@ -8,13 +8,13 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    background: linear-gradient(135deg, #f5f5dc 0%, #d2b48c 100%); /* Tema perpustakaan: krem dan coklat muda */
+    background: linear-gradient(135deg, #f5f5dc 0%, #d2b48c 100%);
     min-height: 100vh;
 }
 
 /* Header dan Navigasi */
 header {
-    background: #8b4513; /* Coklat gelap */
+    background: #8b4513;
     color: white;
     padding: 20px;
     position: fixed;
@@ -52,7 +52,7 @@ nav ul li a:hover {
 
 /* Konten utama */
 main {
-    margin-top: 80px; /* Offset untuk header fixed */
+    margin-top: 80px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -64,6 +64,15 @@ main {
     text-align: center;
     padding: 50px 20px;
 }
+.welcome-img {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
 .hero h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
@@ -73,14 +82,19 @@ main {
     font-size: 1.2em;
     margin-bottom: 40px;
 }
+.gallery h3, .address h3, .contact h3 {
+    font-size: 1.8em;
+    margin: 30px 0 20px;
+    color: #8b4513;
+}
 .images {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 .images img {
-    width: 300px;
+    width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
@@ -90,32 +104,47 @@ main {
 .images img:hover {
     transform: scale(1.05);
 }
+.address iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.contact a {
+    color: #8b4513;
+    text-decoration: none;
+}
+.contact a:hover {
+    text-decoration: underline;
+}
 
-/* Section Pelajari Lebih Lanjut */
-#learn-more {
+/* Section Profil dan Layanan */
+#profil, #layanan {
     background: white;
     padding: 40px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     margin: 40px 0;
 }
-#learn-more h3 {
+#profil h3, #layanan h3 {
     font-size: 2em;
     margin-bottom: 20px;
     color: #8b4513;
+    text-align: center;
 }
-#learn-more h4 {
+#tentang-kami h4 {
     font-size: 1.5em;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: #333;
 }
-#learn-more ul {
-    margin-left: 20px;
-    margin-bottom: 20px;
+.service-item {
+    margin-bottom: 30px;
 }
-#learn-more li {
+.service-item h4 {
+    font-size: 1.3em;
     margin-bottom: 10px;
+    color: #8b4513;
 }
 
 /* Footer */
@@ -139,18 +168,19 @@ footer p {
     nav ul {
         margin-top: 10px;
     }
-    .images {
-        flex-direction: column;
-        align-items: center;
+    .welcome-img {
+        height: 250px;
     }
-    .images img {
-        width: 100%;
-        max-width: 300px;
+    .images {
+        grid-template-columns: 1fr;
+    }
+    .address iframe {
+        height: 300px;
     }
     #home {
         padding: 30px 10px;
     }
-    #learn-more {
+    #profil, #layanan {
         padding: 20px 10px;
     }
 }
