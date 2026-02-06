@@ -3,176 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Saya - GitHub Pages</title>
-    <style>
-        /* Reset dan font dasar */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-        
-        /* Header */
-        header {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        header h1 {
-            font-size: 2.5em;
-            color: #333;
-        }
-        header p {
-            font-size: 1.2em;
-            color: #666;
-            margin-top: 10px;
-        }
-        
-        /* Konten utama */
-        main {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-        }
-        .hero {
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .hero h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 1.1em;
-            margin-bottom: 30px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background: #667eea;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-        .btn:hover {
-            background: #5a6fd8;
-        }
-        
-        /* Section */
-        section {
-            margin: 40px 0;
-            padding: 20px;
-        }
-        section h3 {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-            color: #333;
-        }
-        section p {
-            margin-bottom: 15px;
-        }
-        
-        /* Footer */
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-        footer p {
-            font-size: 0.9em;
-        }
-        
-        /* Tombol scroll ke atas */
-        #scrollToTop {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #667eea;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 50%;
-            cursor: pointer;
-            display: none;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        }
-        #scrollToTop:hover {
-            background: #5a6fd8;
-        }
-        
-        /* Responsivitas */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
-            main {
-                margin: 20px;
-                padding: 15px;
-            }
-        }
-    </style>
+    <title>Perpustakaan Umum - Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Selamat Datang di Website Saya</h1>
-        <p>Halaman sederhana yang dibuat dengan HTML dan CSS untuk GitHub Pages</p>
+        <nav>
+            <div class="logo">
+                <h1>Perpustakaan Umum</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#learn-more">Pelajari Lebih Lanjut</a></li>
+            </ul>
+        </nav>
     </header>
     
     <main>
-        <div class="hero">
-            <h2>Halo, Saya [Nama Anda]!</h2>
-            <p>Ini adalah contoh halaman web yang bagus dan responsif. Anda bisa mengubah teks ini sesuai keinginan.</p>
-            <a href="#about" class="btn">Pelajari Lebih Lanjut</a>
-        </div>
-        
-        <section id="about">
-            <h3>Tentang Saya</h3>
-            <p>Saya adalah seorang pengembang web yang suka membuat halaman-halaman menarik. Kode ini sepenuhnya gratis dan bisa dimodifikasi.</p>
-            <p>Jika Anda ingin menambahkan gambar, cukup ganti URL di tag <code>&lt;img&gt;</code> atau tambahkan elemen baru.</p>
+        <section id="home">
+            <div class="hero">
+                <h2>Selamat Datang di Perpustakaan Umum</h2>
+                <p>Tempat terbaik untuk belajar, membaca, dan mengeksplorasi dunia pengetahuan. Kami memiliki koleksi buku yang luas dan ruang yang nyaman.</p>
+                <div class="images">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Buku-buku di rak" class="img-book">
+                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Ruang perpustakaan" class="img-library">
+                    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Orang membaca buku" class="img-reading">
+                </div>
+            </div>
         </section>
         
-        <section id="contact">
-            <h3>Kontak</h3>
-            <p>Email: contoh@email.com</p>
-            <p>GitHub: <a href="https://github.com/[username]" target="_blank">github.com/[username]</a></p>
+        <section id="learn-more">
+            <h3>Pelajari Lebih Lanjut Tentang Kami</h3>
+            <p>Perpustakaan Umum adalah pusat pengetahuan yang menyediakan akses gratis ke ribuan buku, jurnal, dan sumber daya digital. Kami berkomitmen untuk mendukung pendidikan dan literasi masyarakat.</p>
+            <h4>Layanan Kami:</h4>
+            <ul>
+                <li>Peminjaman buku gratis untuk anggota.</li>
+                <li>Ruang baca dan belajar yang tenang.</li>
+                <li>Program edukasi dan workshop.</li>
+                <li>Akses internet dan komputer.</li>
+            </ul>
+            <h4>Jam Operasional:</h4>
+            <p>Senin - Jumat: 08:00 - 18:00<br>Sabtu: 09:00 - 16:00<br>Minggu: Tutup</p>
+            <p>Untuk informasi lebih lanjut, hubungi kami di email: info@perpustakaanumum.com</p>
         </section>
     </main>
     
     <footer>
-        <p>&copy; 2023 [Nama Anda]. Dibuat dengan ❤️ menggunakan HTML dan CSS.</p>
+        <p>&copy; 2023 Perpustakaan Umum. Dibuat dengan ❤️ untuk komunitas.</p>
     </footer>
     
-    <!-- Tombol scroll ke atas -->
-    <button id="scrollToTop" title="Kembali ke Atas">↑</button>
-    
     <script>
-        // JavaScript sederhana untuk tombol scroll
-        const scrollToTopBtn = document.getElementById('scrollToTop');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                scrollToTopBtn.style.display = 'block';
-            } else {
-                scrollToTopBtn.style.display = 'none';
-            }
-        });
-        
-        scrollToTopBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+        // Smooth scroll untuk navigasi
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
     </script>
 </body>
